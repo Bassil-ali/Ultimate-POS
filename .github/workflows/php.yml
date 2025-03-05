@@ -42,13 +42,4 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-interaction
 
-    - name: Run Laravel setup commands
-      run: |
-        php artisan config:clear
-        php artisan cache:clear
-        php artisan config:cache
-        php artisan route:cache
-
-    # Uncomment if you have tests configured in composer.json
-    # - name: Run test suite
-    #   run: composer run-script test
+    
